@@ -81,17 +81,10 @@ repositoryrequest(userInput){
           this.repository.push(new Repository(response[i].name,response[i].description))
         }
         
-        // this.repository.description=response.description
-      //  for(let counter in response){
-      //    this.all.push(response[counter])
-      //  }
-      // console.log(this.repository)
         resolve()
     },
     error=>{
-            // this.repository.name="Sorry the repository can not be found!"
-            // this.repository.description="??????????????????????"
-
+            
             reject(error)
         }
     )
